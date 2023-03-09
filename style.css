@@ -18,12 +18,11 @@
     border-radius: 5px;
 }
 
-.calc_number {
+.calc_number, .calc_sign {
     display: inline-block;
     background-color: darksalmon;
     width: 20px;
     margin-top: 5px;
-    /* padding: 10px; */
     padding-left: 15px;
     padding-right: 5px;
     padding-top: 10px;
@@ -32,15 +31,8 @@
 }
 
 .calc_sign {
-    display: inline-block;
     background-color: lightsalmon;
-    width: 20px;
-    padding-left: 15px;
-    padding-right: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     margin-top: 7px;
-    border: solid 1px black;
 }
 
 .calc_number:hover, .calc_sign:hover {
@@ -49,6 +41,11 @@
 
 .calc_number:active, .calc_sign:active {
     transform: translate3d(3px, 3px, 0px);
+}
+
+.calc_row {
+    display: flex;
+    justify-content: space-around;
 }
 
 #result_block {
