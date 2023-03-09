@@ -50,3 +50,12 @@
 .calc_number:active, .calc_sign:active {
     transform: translate3d(3px, 3px, 0px);
 }
+
+#result_block {
+    background-color: azure;
+    display: block;
+    position: absolute;
+    right: 30px;
+    width: 200px;
+    height: 500px;
+}

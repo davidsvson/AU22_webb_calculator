@@ -1,6 +1,7 @@
 const numberElements = document.getElementsByClassName('calc_number');
 const signElements = document.getElementsByClassName('calc_sign');
 const result = document.getElementById('result');
+const resultList = document.getElementById('result_list');
 let firstInput = true;
 
 // for(let i=0 ; i < numberElements.length ; i++) {
@@ -47,5 +48,12 @@ const calculate = () => {
     let res = eval(result.innerText); //ANVÄND EJ EVAL!!!
     display('=' + res);
     firstInput = true;
+    displayResult(result.innerText);
+}
+
+const displayResult = (value) => {
+    const listItem = document.createElement('li');
+    listItem.innerText = value;
+    resultList.appendChild(listItem);
 }
 
